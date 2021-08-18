@@ -14,71 +14,15 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) # set wd to source f
 ###############################
 
 linelist <- read.csv("Data/data_all.csv", stringsAsFactors=FALSE) %>%
-  dplyr::filter(set == "country")  %>%
+  dplyr::filter(set == "country") %>%
+  dplyr::select(time, name, cap_new_cases) %>%
   dplyr::select(time, name, cap_new_cases) %>%
   dplyr::rename(.,"date" = time,
                 "country" = name,
                 "incidence" = cap_new_cases) %>% #Daily number of cases per capita (7 day rolling average)
   mutate(incidence = ifelse(is.na(incidence), 0, incidence)) %>%
-  mutate(date = mdy(date))
-
-###############################
-#First case (all 01/2020)
-###############################
-
-casefirstdate <- linelist %>%
-  dplyr::select(country, date) %>% 
-  group_by(country) %>%
-  mutate(date = min(date, na.rm = T))
-
-casefirstdate<- unique(casefirstdate)
-
-###############################
-#Functions
-###############################
-
-inc_dec_function <- function(x) { 
-  if (sum(x == "Increase", na.rm=TRUE) > 3 ) {
-    y <- "Increase"
-  } else if (sum(x == "Decrease", na.rm=TRUE)> 3 ) {
-    y <- "Decrease"
-  } else 
-    y <- "Constant"
-  return(y)
-}
-
-
-###############################
-#Create increase or decrease variable 
-#3 out of 5 days of constant increases or decreases
-###############################
-
-df_country <- linelist %>%
-  group_by(country) %>%
-  arrange(date) %>% #date
-  arrange(country) %>% #character
-  mutate(inc_dec = ifelse(incidence > lag(incidence, n=1)  & incidence >= 0, "Increase", 
-                              ifelse(incidence < lag(incidence, n=1), "Decrease", 
-                                     "Constant"))) %>%
-  mutate(inc_dec_3of5 = rollapply(inc_dec, 5, inc_dec_function, fill = NA, align='right', partial = TRUE))
-         
-
-###########################
-#Another iteration 
-#3 out of 5 days of constant increases greater than 1.2
-#3 out of 5 days of constant decreases greater than 0.80
-#DON'T THINK THIS IS GOOD #NOT USING #AN EXAMPLE OF HOW TO MODIFY
-############################
-
-df_country2 <- linelist %>%
-  group_by(country) %>%
-  arrange(date) %>% #date
-  arrange(country) %>% #character
-  mutate(inc_dec = ifelse(incidence > lag(incidence, n=1)*1.05 & incidence >= 0, "Increase", 
-                          ifelse(incidence < lag(incidence, n=1)*0.95, "Decrease", 
-                                 "Constant"))) %>%
-  mutate(inc_dec_percent = rollapply(inc_dec, 7, inc_dec_function, fill = NA, align='right', partial = TRUE))
-
+  mutate(date = mdy(date)) %>%
+  subset(date > "2020/08/01")
 
 ################################
 #Case threshold
@@ -145,10 +89,8 @@ aggregate_country <- df_country3 %>%
                    constant=length(which(threshold=="Constant")))
 
 
-
-
 ################################
-#High income
+#Income groups
 ################################
 
 countrylist <- read.csv("Data/Dx_country_list2.csv", stringsAsFactors=FALSE)
