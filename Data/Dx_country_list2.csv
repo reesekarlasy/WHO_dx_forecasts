@@ -1,0 +1,198 @@
+country,code,region,income_gp,population,HCW,Dx_consortium
+Afghanistan,AFG,South Asia,LIC,38041754,42180.61884,Yes
+Albania,ALB,Europe & Central Asia,UMIC,2854191,18323.87201,Yes
+Algeria,DZA,Middle East & North Africa,LMIC,43053054,234086.2129,Yes
+American Samoa,ASM,East Asia & Pacific,UMIC,55312,64.83913765,Yes
+Andorra,AND,Europe & Central Asia,HIC,77142,731.1067593,
+Angola,AGO,Sub-Saharan Africa,LMIC,31825295,66809.58402,Yes
+Antigua & Barbuda,ATG,Latin America & Caribbean,HIC,97118,670.8309114,Yes
+Argentina,ARG,Latin America & Caribbean,UMIC,44938712,386248.5102,Yes
+Armenia,ARM,Europe & Central Asia,UMIC,2957731,27916.72029,Yes
+Australia,AUS,East Asia & Pacific,HIC,25364307,497546.4803,
+Austria,AUT,Europe & Central Asia,HIC,8877067,138979.1418,
+Azerbaijan,AZE,Europe & Central Asia,UMIC,10023318,115585.1082,Yes
+Bahamas,BHS,Latin America & Caribbean,HIC,389482,2667.153077,Yes
+Bahrain,BHR,Middle East & North Africa,HIC,1641172,7515.105063,
+Bangladesh,BGD,South Asia,LMIC,163046161,348250.1286,Yes
+Barbados,BRB,Latin America & Caribbean,HIC,287025,3043.278235,Yes
+Belarus,BLR,Europe & Central Asia,UMIC,9466856,159633.3848,Yes
+Belgium,BEL,Europe & Central Asia,HIC,11484055,225191.5396,
+Belize,BLZ,Latin America & Caribbean,UMIC,390353,1722.070827,Yes
+Benin,BEN,Sub-Saharan Africa,LMIC,11801151,15709.04058,Yes
+Bermuda,BMU,North America,HIC,63918,0,
+Bhutan,BTN,South Asia,LMIC,763092,2024.884014,Yes
+Bolivia,BOL,Latin America & Caribbean,LMIC,11513100,36948.47954,Yes
+Bosnia & Herzegovina,BIH,Europe & Central Asia,UMIC,3301000,29837.76251,Yes
+Botswana,BWA,Sub-Saharan Africa,UMIC,2303697,9881.96003,Yes
+Brazil,BRA,Latin America & Caribbean,UMIC,211049527,3696873.292,Yes
+Brunei,BRN,East Asia & Pacific,HIC,433285,5077.998506,
+Bulgaria,BGR,Europe & Central Asia,UMIC,6975761,76658.88884,Yes
+Burkina Faso,BFA,Sub-Saharan Africa,LIC,20321378,17073.26326,Yes
+Burundi,BDI,Sub-Saharan Africa,LIC,11530580,10264.28338,Yes
+Cape Verde,CPV,Sub-Saharan Africa,LMIC,549935,1213.266457,Yes
+Cambodia,KHM,East Asia & Pacific,LMIC,16486542,30000.35679,Yes
+Cameroon,CMR,Sub-Saharan Africa,LMIC,25876380,40356.20959,Yes
+Canada,CAN,North America,HIC,37589262,579678.8438,
+Central African Republic,CAF,Sub-Saharan Africa,LIC,4745185,3413.075924,Yes
+Chad,TCD,Sub-Saharan Africa,LIC,15946876,7578.904741,Yes
+Chile,CHL,Latin America & Caribbean,HIC,18952038,87000.41576,
+China,CHN,East Asia & Pacific,UMIC,1397715000,7522935.519,
+Colombia,COL,Latin America & Caribbean,UMIC,50339443,239858.108,Yes
+Comoros,COM,Sub-Saharan Africa,LMIC,850886,1441.425218,Yes
+Congo - Kinshasa,COD,Sub-Saharan Africa,LIC,86790567,89980.52337,Yes
+Congo - Brazzaville,COG,Sub-Saharan Africa,LMIC,5380508,13166.85032,Yes
+Costa Rica,CRI,Latin America & Caribbean,UMIC,5047561,13370.16462,Yes
+Côte d’Ivoire,CIV,Sub-Saharan Africa,LMIC,25716544,49357.68764,Yes
+Croatia,HRV,Europe & Central Asia,HIC,4067500,55797.52346,
+Cuba,CUB,Latin America & Caribbean,UMIC,11333483,218094.5423,Yes
+Cyprus,CYP,Europe & Central Asia,HIC,1198575,11766.22994,
+Czechia,CZE,Europe & Central Asia,HIC,10669709,164390.8593,
+Denmark,DNK,Europe & Central Asia,HIC,5818553,107481.9491,
+Djibouti,DJI,Middle East & North Africa,LMIC,973560,1437.542387,Yes
+Dominica,DMA,Latin America & Caribbean,UMIC,71808,621.3498476,Yes
+Dominican Republic,DOM,Latin America & Caribbean,UMIC,10738958,30516.7196,Yes
+Ecuador,ECU,Latin America & Caribbean,UMIC,17373662,91388.4317,Yes
+Egypt,EGY,Middle East & North Africa,LMIC,100388073,612140.7613,Yes
+El Salvador,SLV,Latin America & Caribbean,LMIC,6453553,40224.14442,Yes
+Equatorial Guinea,GNQ,Sub-Saharan Africa,UMIC,1355986,2209.556893,Yes
+Eritrea,ERI,Sub-Saharan Africa,LIC,3213972,299,Yes
+Estonia,EST,Europe & Central Asia,HIC,1326590,17545.90792,
+Eswatini,SWZ,Sub-Saharan Africa,LMIC,1148130,6982.612358,Yes
+Ethiopia,ETH,Sub-Saharan Africa,LIC,112078730,163337.0823,Yes
+Faroe Islands,FRO,Europe & Central Asia,HIC,48678,19.69854271,
+Fiji,FJI,East Asia & Pacific,UMIC,889953,4227.550836,Yes
+Finland,FIN,Europe & Central Asia,HIC,5520314,129493.8724,
+France,FRA,Europe & Central Asia,HIC,67059887,1156683.441,
+French Polynesia,PYF,East Asia & Pacific,HIC,279287,591.3586798,
+Gabon,GAB,Sub-Saharan Africa,UMIC,2172579,8027.257394,Yes
+Gambia,GMB,Sub-Saharan Africa,LIC,2347706,7112.109497,Yes
+Georgia,GEO,Europe & Central Asia,UMIC,3720382,38700.77779,Yes
+Germany,DEU,Europe & Central Asia,HIC,83132799,1802683.552,
+Ghana,GHA,Sub-Saharan Africa,LMIC,30417856,63150.71007,Yes
+Greece,GRC,Europe & Central Asia,HIC,10716322,127012.8101,
+Greenland,GRL,Europe & Central Asia,HIC,56225,0,
+Grenada,GRD,Latin America & Caribbean,UMIC,112003,740.3237383,Yes
+Guatemala,GTM,Latin America & Caribbean,UMIC,16604026,31388.07253,Yes
+Guinea,GIN,Sub-Saharan Africa,LIC,12771246,13550.38019,Yes
+Guinea-Bissau,GNB,Sub-Saharan Africa,LIC,1920922,6652.227092,Yes
+Guyana,GUY,Latin America & Caribbean,UMIC,782766,2151.990756,Yes
+Haiti,HTI,Latin America & Caribbean,LIC,11263077,18106.241,Yes
+Honduras,HND,Latin America & Caribbean,LMIC,9746117,21594.52119,Yes
+Hong Kong SAR China,HKG,East Asia & Pacific,HIC,7507400,13099.02227,
+Hungary,HUN,Europe & Central Asia,HIC,9769949,120410.6254,
+Iceland,ISL,Europe & Central Asia,HIC,361313,8690.746078,
+India,IND,South Asia,LMIC,1366417754,6562671.873,Yes
+Indonesia,IDN,East Asia & Pacific,UMIC,270625568,816205.2667,Yes
+Iran,IRN,Middle East & North Africa,UMIC,82913906,397331.0304,Yes
+Iraq,IRQ,Middle East & North Africa,UMIC,39309783,127673.5648,Yes
+Ireland,IRL,Europe & Central Asia,HIC,4941444,103962.7984,
+Israel,ISR,Middle East & North Africa,HIC,9053300,109884.8004,
+Italy,ITA,Europe & Central Asia,HIC,60297396,803107.5301,
+Jamaica,JAM,Latin America & Caribbean,UMIC,2948279,9358.672269,Yes
+Japan,JPN,East Asia & Pacific,HIC,126264931,2195175.752,
+Jordan,JOR,Middle East & North Africa,UMIC,10101694,91296.53581,Yes
+Kazakhstan,KAZ,Europe & Central Asia,UMIC,18513930,251946.907,Yes
+Kenya,KEN,Sub-Saharan Africa,LMIC,52573973,132056.5582,Yes
+Kiribati,KIR,East Asia & Pacific,LMIC,117606,712.2894021,Yes
+South Korea,KOR,East Asia & Pacific,HIC,51709098,507914.0504,
+Kosovo,XKX,Europe & Central Asia,UMIC,1794248,746.2372337,Yes
+Kuwait,KWT,Middle East & North Africa,HIC,4207083,48971.01558,
+Kyrgyzstan,KGZ,Europe & Central Asia,LMIC,6456900,59325.78099,Yes
+Laos,LAO,East Asia & Pacific,LMIC,7169455,17243.67985,Yes
+Latvia,LVA,Europe & Central Asia,HIC,1912789,19627.16023,
+Lebanon,LBN,Middle East & North Africa,UMIC,6855713,56580.56205,Yes
+Lesotho,LSO,Sub-Saharan Africa,LMIC,2125268,2599.336982,Yes
+Liberia,LBR,Sub-Saharan Africa,LIC,4937374,1763.617042,Yes
+Libya,LBY,Middle East & North Africa,UMIC,6777452,74153.47021,Yes
+Liechtenstein,LIE,Europe & Central Asia,HIC,38019,15.35899457,
+Lithuania,LTU,Europe & Central Asia,HIC,2786844,43278.50547,
+Luxembourg,LUX,Europe & Central Asia,HIC,619896,12336.71987,
+Madagascar,MDG,Sub-Saharan Africa,LIC,26969307,21234.44186,Yes
+Malawi,MWI,Sub-Saharan Africa,LIC,18628747,20478.67997,Yes
+Malaysia,MYS,East Asia & Pacific,UMIC,31949777,244031.8911,Yes
+Maldives,MDV,South Asia,UMIC,530953,4240.203296,Yes
+Mali,MLI,Sub-Saharan Africa,LIC,19658031,18067.09724,Yes
+Malta,MLT,Middle East & North Africa,HIC,502653,7919.461726,
+Mauritania,MRT,Sub-Saharan Africa,LMIC,4525696,7760.950592,Yes
+Mauritius,MUS,Sub-Saharan Africa,HIC,1265711,10506.93515,Yes
+Mexico,MEX,Latin America & Caribbean,UMIC,127575529,824443.2355,Yes
+Moldova,MDA,Europe & Central Asia,LMIC,2657637,32178.31528,Yes
+Monaco,MCO,Europe & Central Asia,HIC,38964,1276.856584,
+Mongolia,MNG,East Asia & Pacific,LMIC,3225167,29252.38608,Yes
+Montenegro,MNE,Europe & Central Asia,UMIC,622137,5731.74446,Yes
+Morocco,MAR,Middle East & North Africa,LMIC,36471769,100023.1859,Yes
+Mozambique,MOZ,Sub-Saharan Africa,LIC,30366036,21740.40056,Yes
+Myanmar (Burma),MMR,East Asia & Pacific,LMIC,54045420,149457.4565,Yes
+Namibia,NAM,Sub-Saharan Africa,UMIC,2494530,10513.89073,Yes
+Nepal,NPL,South Asia,LMIC,28608710,141682.6784,Yes
+Netherlands,NLD,Europe & Central Asia,HIC,17332850,307066.5993,
+New Caledonia,NCL,East Asia & Pacific,HIC,287800,706.6291294,
+New Zealand,NZL,East Asia & Pacific,HIC,4917000,87618.20548,
+Nicaragua,NIC,Latin America & Caribbean,LMIC,6545502,29015.38158,Yes
+Niger,NER,Sub-Saharan Africa,LIC,23310715,19326.91169,Yes
+Nigeria,NGA,Sub-Saharan Africa,LMIC,200963599,491794.3383,Yes
+North Macedonia,MKD,Europe & Central Asia,UMIC,2083459,16869.53384,Yes
+Norway,NOR,Europe & Central Asia,HIC,5347896,150201.6312,
+Oman,OMN,Middle East & North Africa,HIC,4974986,43663.74991,
+Pakistan,PAK,South Asia,LMIC,216565318,569252.3024,Yes
+Palau,PLW,East Asia & Pacific,HIC,18008,139.055937,Yes
+Panama,PAN,Latin America & Caribbean,HIC,4246439,17092.29495,
+Papua New Guinea,PNG,East Asia & Pacific,LMIC,8776109,10821.3939,Yes
+Paraguay,PRY,Latin America & Caribbean,UMIC,7044636,22860.31569,Yes
+Peru,PER,Latin America & Caribbean,UMIC,32510453,130045.7869,Yes
+Philippines,PHL,East Asia & Pacific,LMIC,108116615,321771.9198,Yes
+Poland,POL,Europe & Central Asia,HIC,37970874,391860.9235,
+Portugal,PRT,Europe & Central Asia,HIC,10269417,122675.1377,
+Qatar,QAT,Middle East & North Africa,HIC,2832067,25981.69837,
+Romania,ROU,Europe & Central Asia,HIC,19356544,227473.8408,Yes
+Russia,RUS,Europe & Central Asia,UMIC,144373535,2013159.593,Yes
+Rwanda,RWA,Sub-Saharan Africa,LIC,12626950,32414.59349,Yes
+Samoa,WSM,East Asia & Pacific,UMIC,197097,679.4320847,Yes
+San Marino,SMR,Europe & Central Asia,HIC,33860,591.7727089,
+São Tomé & Príncipe,STP,Sub-Saharan Africa,LMIC,215056,867.3723997,Yes
+Saudi Arabia,SAU,Middle East & North Africa,HIC,34268528,351963.5403,
+Senegal,SEN,Sub-Saharan Africa,LMIC,16296364,8398.408372,Yes
+Serbia,SRB,Europe & Central Asia,UMIC,6944975,97920.16628,Yes
+Seychelles,SYC,Sub-Saharan Africa,HIC,97625,756.0351967,Yes
+Sierra Leone,SLE,Sub-Saharan Africa,LIC,7813215,12292.04238,Yes
+Singapore,SGP,East Asia & Pacific,HIC,5703569,65342.62935,
+Slovakia,SVK,Europe & Central Asia,HIC,5454073,74154.77865,
+Slovenia,SVN,Europe & Central Asia,HIC,2087946,31238.52413,
+Somalia,SOM,Sub-Saharan Africa,LIC,15442905,7895.01546,Yes
+South Africa,ZAF,Sub-Saharan Africa,UMIC,58558270,348777.6171,Yes
+South Sudan,SSD,Sub-Saharan Africa,LIC,11062113,4528.464026,Yes
+Spain,ESP,Europe & Central Asia,HIC,47076781,610781.975,
+Sri Lanka,LKA,South Asia,LMIC,21803000,86708.67211,Yes
+St. Kitts & Nevis,KNA,Latin America & Caribbean,HIC,52834,426.2061355,Yes
+St. Lucia,LCA,Latin America & Caribbean,UMIC,182790,670.6852,Yes
+St. Vincent & Grenadines,VCT,Latin America & Caribbean,UMIC,110589,471.1530423,Yes
+Sudan,SDN,Sub-Saharan Africa,LIC,42813238,82133.09497,Yes
+Suriname,SUR,Latin America & Caribbean,UMIC,581363,3540.457168,Yes
+Sweden,SWE,Europe & Central Asia,HIC,10285453,211563.7992,
+Switzerland,CHE,Europe & Central Asia,HIC,8574832,202063.1461,
+Syria,SYR,Middle East & North Africa,LIC,17070135,80674.75046,Yes
+Taiwan,TWN,East Asia & Pacific,HIC,,,
+Tajikistan,TJK,Europe & Central Asia,LIC,9321018,73855.52242,Yes
+Tanzania,TZA,Sub-Saharan Africa,LMIC,58005463,58938.1023,Yes
+Thailand,THA,East Asia & Pacific,UMIC,69625582,364904.97,Yes
+Timor-Leste,TLS,East Asia & Pacific,LMIC,1293119,4108.714964,Yes
+Togo,TGO,Sub-Saharan Africa,LIC,8082366,9847.967106,Yes
+Trinidad & Tobago,TTO,Latin America & Caribbean,HIC,1394973,10767.7298,Yes
+Tunisia,TUN,Middle East & North Africa,LMIC,11694719,60880.80937,Yes
+Turkey,TUR,Europe & Central Asia,UMIC,83429615,470454.5168,Yes
+Uganda,UGA,Sub-Saharan Africa,LIC,44269594,68357.15869,Yes
+Ukraine,UKR,Europe & Central Asia,LMIC,44385155,504153.9539,Yes
+United Arab Emirates,ARE,Middle East & North Africa,HIC,9770529,120905.7312,
+United Kingdom,GBR,Europe & Central Asia,HIC,66834405,1028834.136,
+United States,USA,North America,HIC,328239523,5112142.34,
+Uruguay,URY,Latin America & Caribbean,HIC,3461734,37400.09034,
+Uzbekistan,UZB,Europe & Central Asia,LMIC,33580650,518385.4311,Yes
+Vanuatu,VUT,East Asia & Pacific,LMIC,299882,847.9661495,Yes
+Venezuela,VEN,Latin America & Caribbean,UMIC,28515829,110734.1125,Yes
+Vietnam,VNM,East Asia & Pacific,LMIC,96462106,261104.1097,Yes
+Palestinian Territories,PSE,Middle East & North Africa,LMIC,4685306,6069.15166,Yes
+Yemen,YEM,Middle East & North Africa,LIC,29161922,41715.18584,Yes
+Zambia,ZMB,Sub-Saharan Africa,LMIC,17861030,28955.28092,Yes
+Zimbabwe,ZWE,Sub-Saharan Africa,LMIC,14645468,34994.33507,Yes
+Vatican City,,Europe & Central Asia,HIC,803,,
+Western Sahara ,,Middle East & North Africa,LMIC,614679,,
