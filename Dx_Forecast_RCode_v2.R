@@ -15,11 +15,11 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) # set wd to source f
 
 linelist <- read.csv("Data/data_all.csv", stringsAsFactors=FALSE) %>%
   dplyr::filter(set == "country") %>%
-  dplyr::select(time, name, cap_new_cases) %>%
-  dplyr::select(time, name, cap_new_cases) %>%
+  dplyr::select(time, name, cap_new_cases, cap_new_tests) %>%
   dplyr::rename(.,"date" = time,
                 "country" = name,
-                "incidence" = cap_new_cases) %>% #Daily number of cases per capita (7 day rolling average)
+                "incidence" = cap_new_cases,
+                "dailytestspc" = cap_new_tests) %>% #Daily number of cases per capita (7 day rolling average)
   mutate(incidence = ifelse(is.na(incidence), 0, incidence)) %>%
   mutate(date = mdy(date)) %>%
   subset(date > "2020/08/01")
@@ -43,39 +43,6 @@ df_country3 <- linelist2 %>%
                      ifelse(incidence>=peak_incidence*0.20 & incidence < peak_incidence*0.50 & incidence > 0, "Increase/Decrease", "Constant")
                      ))
 
-###########################
-#Plots
-############################
-
-colors <- c('#FE6100', '#785EF0','#648FFF')
-levels<-c("Peak", "Increase/Decrease", "Constant")
-c<-unique(linelist$country)
-
-# Lineplot for country per metric ####
-for (i in 1:length(c)) {
-  df_country_line = df_country3 %>%
-    filter(country == c[i] )
-    inc_col = ggplot(df_country_line, aes(x=date,group=country)) +
-      geom_col(aes(y=incidence, fill=threshold), width = 1) + 
-      facet_wrap(~country) + 
-      theme(
-        legend.position= "bottom",
-        legend.title = element_blank(),
-        legend.text = element_text(size = 18),
-        axis.text.y = element_text(size = 10),
-        axis.title.y = element_text(size = 16, margin = margin(t = 0, r = 20, b = 0, l = 0)),
-        strip.text   = element_text(size = 14)) +
-      scale_fill_manual(breaks = levels,
-                        values= colors,
-                        labels = levels) +
-      scale_size_manual(values = c(2)) +
-      labs(x='', y='Rolling Daily Incidence per capita' ) 
-    
-    png(paste("Figures/",c[i],".png", sep=""), width=12, height=8, units="in", res=100)
-    print(inc_col)
-    dev.off()
-}
-
 
 ###########################
 #Total number per country
@@ -88,6 +55,19 @@ aggregate_country <- df_country3 %>%
                    inc_dec=length(which(threshold=="Increase/Decrease")),
                    constant=length(which(threshold=="Constant")))
 
+aggregate_country_tests <- df_country3 %>%
+  group_by(country, threshold) %>%
+  arrange(threshold) %>%
+  dplyr::summarise(mean_dailytestspc = mean(dailytestspc, na.rm=TRUE))
+
+aggregate_country_tests1 <- aggregate_country_tests %>%
+  spread(threshold, mean_dailytestspc) %>%
+  dplyr::rename(.,"mean_dailytestspc_peak" = Peak,
+                "mean_dailytestspc_inc_dec" = 'Increase/Decrease',
+                "mean_dailytestspc_con" = Constant)
+
+aggregate_country <- aggregate_country %>%
+  left_join(aggregate_country_tests1, by="country")
 
 ################################
 #Income groups
@@ -102,6 +82,43 @@ aggregate_income <- final %>%
                    inc_dec=sum(inc_dec),
                    constant=sum(constant))
 
+###########################
+#Saving files
+############################
+
 aggregate_country %>% write.csv(.,"Output/Country.csv")
 aggregate_income %>% write.csv(.,"Output/Income.csv")
 final %>% write.csv(.,"Output/rawfile.csv")
+
+###########################
+#Plots
+############################
+
+colors <- c('#FE6100', '#785EF0','#648FFF')
+levels<-c("Peak", "Increase/Decrease", "Constant")
+c<-unique(linelist$country)
+
+# Lineplot for country per metric ####
+for (i in 1:length(c)) {
+  df_country_line = df_country3 %>%
+    filter(country == c[i] )
+  inc_col = ggplot(df_country_line, aes(x=date,group=country)) +
+    geom_col(aes(y=incidence, fill=threshold), width = 1) + 
+    facet_wrap(~country) + 
+    theme(
+      legend.position= "bottom",
+      legend.title = element_blank(),
+      legend.text = element_text(size = 18),
+      axis.text.y = element_text(size = 10),
+      axis.title.y = element_text(size = 16, margin = margin(t = 0, r = 20, b = 0, l = 0)),
+      strip.text   = element_text(size = 14)) +
+    scale_fill_manual(breaks = levels,
+                      values= colors,
+                      labels = levels) +
+    scale_size_manual(values = c(2)) +
+    labs(x='', y='Rolling Daily Incidence per capita' ) 
+  
+  png(paste("Figures/",c[i],".png", sep=""), width=12, height=8, units="in", res=100)
+  print(inc_col)
+  dev.off()
+}
